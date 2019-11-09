@@ -42,4 +42,12 @@ function root(){
 	let rootValue =  document.calculator.textfield.value**0.5;
 	document.calculator.textfield.value = rootValue.toFixed(3);
 }
+//kosu function
+function putInPlus(){
+	document.calculator.textfield.value += '+';
+}
+//minus function
+function putInMinus(){
+	document.calculator.textfield.value += '-';	
+}
 /**////////////////////*/

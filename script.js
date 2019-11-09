@@ -67,3 +67,7 @@ function putInDot(){
 	document.calculator.textfield.value += '.';
 }
 /**////////////////////*/
+function equal(){
+	let equalValue = eval(document.calculator.textfield.value.split('x').join('*'));
+	document.calculator.textfield.value = equalValue.toFixed(3);
+}

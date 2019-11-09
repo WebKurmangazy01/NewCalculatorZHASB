@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+	<title>Calculator</title>
+</head>
+<body>
+	<header>
+		JavaScript Calculator
+	</header>
+	<div class="calculator">
+		<form name="calculator">
+			<input name="textfield" type="textview">
+		</form>	
+			<div class="button">
+				<input type="button" id="squared" value="x²" onclick="putInSquare('²')">
+				<input type="button" id="divide" value="/" onclick="putInDivide('/')">
+				<input type="button" id="multiply" value="*" onclick="putMultiply('*')">
+				<input type="button" id="minus" value="-" onclick="putInMinus('-')"><br>
+				<input type="button" id="seven" value="7" onclick="putInSeven()">
+				<input type="button" id="eight" value="8" onclick="putInEight()">
+				<input type="button" id="nine" value="9" onclick="putInNine()">
+				<input type="button" id="plus" value="+" onclick="putInPlus('+')"><br>
+				<input type="button" id="four" value="4" onclick="putInFour()">
+				<input type="button" id="five" value="5" onclick="putInFive()">
+				<input type="button" id="six" value="6" onclick="putInSix()">
+				<input type="button" id="dot" value="." onclick="putInDot()"><br>
+				<input type="button" id="one" value="1" onclick="putInOne()">
+				<input type="button" id="two" value="2" onclick="putInTwo()">
+				<input type="button" id="three" value="3" onclick="putInThree()">
+				<input type="button" id="zero" value="0" onclick="putInZero()"><br>
+				<input type="button" id="clear" value="c" onclick="clearAll()">
+				<input type="button" id="root" value="√x" onclick="root('√')">
+				<input type="button" id="percentage" value="%" onclick="root('%')">
+				<input type="button" id="back" value="<" onclick="goBack()"><br>
+				<input type="button" id="equal" value="=" onclick="equal()">
+			</div>
+	</div>	
+	<footer>
+		<h1>Calculator maden by </h1>
+	</footer>
+</body>
+</html>

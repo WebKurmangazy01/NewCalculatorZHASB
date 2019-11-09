@@ -70,6 +70,13 @@ function putInDot(){
 function equal(){
 	let equalValue = eval(document.calculator.textfield.value.split('x').join('*'));
 	document.calculator.textfield.value = equalValue.toFixed(3);
+	try{
+	    if(equalValue == 'Infinity')throw "You can't divide to zero";
+	}
+	catch(error){
+	    alert(error);
+	    clearAll();
+	}
 }
 /*clearAll*/
 //This function clears our textfield and deletes all values

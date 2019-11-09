@@ -71,3 +71,9 @@ function equal(){
 	let equalValue = eval(document.calculator.textfield.value.split('x').join('*'));
 	document.calculator.textfield.value = equalValue.toFixed(3);
 }
+/*clearAll*/
+//This function clears our textfield and deletes all values
+function clearAll(){
+	document.calculator.textfield.value = '';
+}
+/**//////////////////////////*/

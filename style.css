@@ -1,4 +1,4 @@
-*{
+/**{
 	margin: 0;
 	padding: 0;
 }
@@ -50,5 +50,99 @@ input[type="button"]:hover{
 input#equal{
 	margin-right: 5px;
 	width: 220px;
+} old style version
+*/
+/*new style version*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: calibri;
+
+	text-align: center;
+	/*justify-content: center;*/
+	align-items: center;
+	min-height: 100vh;
+	background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+
+}
+.calculator{
+	margin-top:20px;
+	margin-left:565px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	width: 400px;
+	
+}
+input[type="textview"]{
+	height: 30px;
+	border-radius: 2px;
+	width: 210px; 
+	padding: 3px;
+	margin-bottom: 5px;
+	text-align: right;
+	font-size: 20px;
+}
+input[type="button"]{
+	height: 50px;
+	width: 50px;
+	margin: 2px;
+	padding: 0;
+	font-size: 25px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+input#clear{
+	background: red;
+}
+input#back{
+	background: blue;
+}
+input[type="button"]:hover{
+	transition: .5s;
+	background: #2196f3;
+	box-shadow:  0 0 10px #2196f3,0 0 40px #2196f3,0 0 100px #2196f3;
+	transition-delay: 0.1s;
+}
+input#equal{
+	margin-right: 5px;
+	width: 220px;
 }
 
+header p{
+	font-size: 18px;
+}
+.hide{
+	font-family: 'Open Sans', sans-serif;
+  font-family: 'Kaushan Script', cursive;
+}
+.hide:last-of-type {
+	width:0px;
+	animation: reveal 12s infinite;
+  }
+  @keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px;}
+    20% {margin-left:-800px; }
+	35% { margin-left:-400px; }
+	50%{margin-left:-200px;}
+	85%{margin-left:0px;}
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:0.2;width:200px;}
+	30% {width:400px;opacity: 0.5;}
+	50%{width:800px;opacity:0.7;}
+	80% {opacity:1;}
+	85%{width:1500px;}
+    100% {opacity:0;width:3000px;}
+}

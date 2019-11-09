@@ -77,3 +77,9 @@ function clearAll(){
 	document.calculator.textfield.value = '';
 }
 /**//////////////////////////*/
+//artka fucn
+function goBack(){
+	let currentElementValue = document.calculator.textfield.value;
+	let minusOneElement = currentElementValue.length - 1;
+	document.calculator.textfield.value = currentElementValue.substring(0,minusOneElement);
+}

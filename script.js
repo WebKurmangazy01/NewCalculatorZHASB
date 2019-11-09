@@ -7,7 +7,8 @@ function putInEight(){
 }
 function putInSeven(){
 	document.calculator.textfield.value += '7';
-}function putInTZero(){
+}
+function putInZero(){
 	document.calculator.textfield.value += '0';
 }
 //This function putting 1 in a textfield on button onclick event

@@ -34,3 +34,12 @@ function putInFive(){
 function putInSix(){
 	document.calculator.textfield.value += '6';
 }
+/*процент*/ 
+function percentage(){
+	document.calculator.textfield.value = Number(document.calculator.textfield.value) / 100;
+}
+function root(){
+	let rootValue =  document.calculator.textfield.value**0.5;
+	document.calculator.textfield.value = rootValue.toFixed(3);
+}
+/**////////////////////*/

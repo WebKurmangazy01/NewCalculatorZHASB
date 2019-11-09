@@ -62,4 +62,8 @@ function putInMultiply(){
 function square(){
 	document.calculator.textfield.value = document.calculator.textfield.value**2; 
 }
+//cl-da tochka fucn-sy
+function putInDot(){
+	document.calculator.textfield.value += '.';
+}
 /**////////////////////*/

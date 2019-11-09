@@ -18,7 +18,7 @@ body{
 	width: 400px;
 	
 }
-input[type="text"]{
+input[type="textview"]{
 	height: 30px;
 	border-radius: 2px;
 	width: 210px; 

@@ -22,3 +22,15 @@ function putInTwo(){
 function putInNine(){
 	document.calculator.textfield.value += '9';
 }
+//4-ty kosady
+function putInFour(){
+	document.calculator.textfield.value += '4';
+}
+//5-ty kosady
+function putInFive(){
+	document.calculator.textfield.value += '5';
+}
+//6-ny kosady
+function putInSix(){
+	document.calculator.textfield.value += '6';
+}

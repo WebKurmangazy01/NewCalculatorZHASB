@@ -41,6 +41,14 @@ function percentage(){
 function root(){
 	let rootValue =  document.calculator.textfield.value**0.5;
 	document.calculator.textfield.value = rootValue.toFixed(3);
+	/**update for root*/
+	try{
+		if(isNaN(rootValue)) throw "you cannot take negative values from under the root";
+	}
+	catch(element){
+		alert(element);
+		document.calculator.textfield.value = '';
+	}
 }
 //kosu function
 function putInPlus(){

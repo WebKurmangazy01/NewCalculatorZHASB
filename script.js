@@ -50,4 +50,16 @@ function putInPlus(){
 function putInMinus(){
 	document.calculator.textfield.value += '-';	
 }
+//This function doing division operation
+function putInDivide(){
+	document.calculator.textfield.value += '/';
+}
+//This function doing multiplication operation
+function putInMultiply(){
+	document.calculator.textfield.value += 'x';
+}
+//This function makes square
+function square(){
+	document.calculator.textfield.value = document.calculator.textfield.value**2; 
+}
 /**////////////////////*/
